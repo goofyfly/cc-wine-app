@@ -8,6 +8,11 @@
   --color-wine-900: #7f1d1d;
   --color-wine-800: #991b1b;
   --color-wine-700: #b91c1c;
+
+  --color-border: #e7e5e4;
+  /* stone-200 */
+
+  --shadow-glass-inset: inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 @layer base {
@@ -17,7 +22,7 @@
   }
 
   * {
-    @apply border-border;
+    @apply border-stone-200;
   }
 
   body {
@@ -28,7 +33,7 @@
 
 @layer utilities {
   .glass {
-    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-[inset_0_1px_0_rgba(255, 255, 255, 0.1)];
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-glass-inset;
   }
 
   .text-balance {
