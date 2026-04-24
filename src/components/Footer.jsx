@@ -1,73 +1,82 @@
 import React from 'react';
-import { MapPin, EnvelopeSimple, InstagramLogo, FacebookLogo, TwitterLogo } from '@phosphor-icons/react';
+import { MapPin, EnvelopeSimple, InstagramLogo, FacebookLogo } from '@phosphor-icons/react';
 
 const Footer = ({ t }) => {
+    const discoverHrefs = ['#collection', '#story', '#winemaker'];
+
     return (
-        <footer className="bg-charcoal-950 pt-24 pb-12 px-6 border-t border-charcoal-700/30">
-            <div className="max-w-[1440px] mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-20">
-                    {/* Col 1: Brand */}
-                    <div className="flex flex-col items-start gap-6">
+        <footer className="bg-charcoal-950 pt-20 pb-10 px-5 md:px-10 border-t border-charcoal-800/50">
+            <div className="max-w-[1400px] mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-16">
+                    {/* col 1: brand */}
+                    <div className="flex flex-col items-start gap-5">
                         <img
                             src="/images/logo.png"
                             alt="Crimson & Cardinal"
-                            className="w-20 filter brightness-0 invert opacity-90"
+                            className="w-16 opacity-85"
+                            style={{ filter: 'brightness(0) invert(1)' }}
                         />
                         <p className="text-ivory-300 text-xs leading-relaxed max-w-xs font-light">
-                            Crafted in Napa Valley for the table, the cellar, and the moments worth remembering.
+                            {t.footer.tagline}
                         </p>
                     </div>
 
-                    {/* Col 2: Contact */}
-                    <div className="flex flex-col items-start gap-6">
-                        <h4 className="text-ivory-50 text-[10px] font-bold tracking-[0.2em] uppercase">Contact</h4>
-                        <div className="flex flex-col gap-4 text-ivory-300 text-xs font-light leading-relaxed">
-                            <div className="flex items-start gap-3">
-                                <MapPin size={16} weight="light" className="text-brass-400 shrink-0 mt-0.5" />
+                    {/* col 2: contact */}
+                    <div className="flex flex-col items-start gap-5">
+                        <h4 className="text-ivory-50 text-[10px] font-bold tracking-[0.2em] uppercase">
+                            {t.footer.contactTitle}
+                        </h4>
+                        <div className="flex flex-col gap-3 text-ivory-300 text-xs font-light leading-relaxed">
+                            <div className="flex items-start gap-2.5">
+                                <MapPin size={15} weight="light" className="text-brass-400 shrink-0 mt-0.5" />
                                 <span>{t.footer.address}</span>
                             </div>
-                            <div className="flex items-start gap-3">
-                                <EnvelopeSimple size={16} weight="light" className="text-brass-400 shrink-0 mt-0.5" />
+                            <div className="flex items-start gap-2.5">
+                                <EnvelopeSimple size={15} weight="light" className="text-brass-400 shrink-0 mt-0.5" />
                                 <span>{t.footer.email}</span>
                             </div>
                         </div>
                     </div>
 
-                    {/* Col 3: Navigation */}
-                    <div className="flex flex-col items-start gap-6">
-                        <h4 className="text-ivory-50 text-[10px] font-bold tracking-[0.2em] uppercase">Discover</h4>
-                        <div className="flex flex-col gap-3 text-ivory-300 text-xs font-light uppercase tracking-wider">
-                            <a href="#hero" className="hover:text-brass-400 transition-colors">Our Collection</a>
-                            <a href="#story" className="hover:text-brass-400 transition-colors">Provenance & Craft</a>
-                            <a href="#contact" className="hover:text-brass-400 transition-colors">Client Services</a>
+                    {/* col 3: discover */}
+                    <div className="flex flex-col items-start gap-5">
+                        <h4 className="text-ivory-50 text-[10px] font-bold tracking-[0.2em] uppercase">
+                            {t.footer.discoverTitle}
+                        </h4>
+                        <div className="flex flex-col gap-2.5 text-ivory-300 text-xs font-light uppercase tracking-wider">
+                            {t.footer.discoverLinks.map((label, i) => (
+                                <a key={i} href={discoverHrefs[i]} className="hover:text-brass-400 transition-colors duration-300">
+                                    {label}
+                                </a>
+                            ))}
                         </div>
                     </div>
 
-                    {/* Col 4: Social */}
-                    <div className="flex flex-col items-start gap-6">
-                        <h4 className="text-ivory-50 text-[10px] font-bold tracking-[0.2em] uppercase">Connect</h4>
-                        <div className="flex gap-5 text-ivory-300">
+                    {/* col 4: social */}
+                    <div className="flex flex-col items-start gap-5">
+                        <h4 className="text-ivory-50 text-[10px] font-bold tracking-[0.2em] uppercase">
+                            {t.footer.connectTitle}
+                        </h4>
+                        <div className="flex gap-4 text-ivory-300">
                             <a href="#" className="hover:text-brass-400 transition-colors" aria-label="Instagram">
                                 <InstagramLogo size={20} weight="light" />
                             </a>
                             <a href="#" className="hover:text-brass-400 transition-colors" aria-label="Facebook">
                                 <FacebookLogo size={20} weight="light" />
                             </a>
-                            <a href="#" className="hover:text-brass-400 transition-colors" aria-label="Twitter">
-                                <TwitterLogo size={20} weight="light" />
-                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div className="divider-rule mb-8"></div>
+                <div className="divider-rule mb-6" />
 
-                <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] tracking-[0.1em] text-ivory-400/60 uppercase font-light">
+                <div className="flex flex-col md:flex-row justify-between items-center gap-3 text-[10px] tracking-[0.08em] text-ivory-400/50 font-light">
                     <p>{t.footer.copyright}</p>
-                    <div className="flex gap-6">
-                        <a href="#" className="hover:text-ivory-300 transition-colors">Privacy Policy</a>
-                        <a href="#" className="hover:text-ivory-300 transition-colors">Terms of Service</a>
-                    </div>
+                    {t.footer.icp && (
+                        <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer" className="hover:text-ivory-300 transition-colors">
+                            {t.footer.icp}
+                        </a>
+                    )}
                 </div>
             </div>
         </footer>

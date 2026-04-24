@@ -3,20 +3,20 @@
         "home": "首页",
         "story": "品牌故事",
         "collection": "臻藏酒款",
+        "winemaker": "酿酒师",
         "contact": "联系我们",
-        "inquiry": "发送询盘",
+        "acquireNow": "立即购买",
         "switchLang": "EN"
     },
     "hero": {
-        "eyebrow": "纳帕谷赤霞珠",
-        "title": "更克制的纳帕谷表达。",
-        "body": "Crimson & Cardinal 结合 Oakville 葡萄果实、严谨的酒窖工艺与精致平衡的纳帕谷风格，适合珍藏、宴请与重要时刻开启。",
+        "eyebrow": "纳帕谷赤霞珠 · 2021 Oakville",
+        "title": "每一滴膜拜，皆为你而来。",
+        "body": "Crimson & Cardinal 产自世界闻名的纳帕山谷核心区域 Oakville，择顶级膜拜酒葡萄园之阳光与土壤，以最严谨的工艺酿造，只为与亲友共享佳酿。",
         "cta": "探索臻藏",
         "ctaSecondary": "品牌故事"
     },
     "metrics": {
-        "sectionTitle": "限量酿造",
-        "sectionBody": "我们刻意保持极低的产量，确保从葡萄园到装瓶的每一个环节都能得到悉心照料。",
+        "sectionTitle": "限量酿造，只为少数人而来。",
         "items": [
             {
                 "value": "100",
@@ -24,57 +24,53 @@
             },
             {
                 "value": "6",
-                "label": "限量配额（瓶）"
+                "label": "限量购买（瓶）"
             },
             {
                 "value": "600",
-                "label": "本期发布（瓶）"
+                "label": "本批次产量（瓶）"
             },
             {
                 "value": "500+",
-                "label": "俱乐部成员"
+                "label": "会员人数"
             }
         ]
     },
     "features": {
-        "title": "工艺哲学",
-        "link": "了解酿造过程",
+        "title": "阳光与土壤，爱与初心",
+        "subtitle": "从葡萄园到杯中，每一步皆精心",
         "cards": [
             {
-                "title": "来自 Oakville，亦忠于风土。",
-                "body": "Oakville 位于纳帕谷核心地带，以出产具有深度、结构感和陈年潜力的赤霞珠而闻名。我们以克制而精准的方式呈现其风土特色。",
-                "link": "了解详情"
+                "title": "来自 Oakville，忠于风土",
+                "body": "产地 Oakville 位于纳帕山谷核心区域，与 Harlan Estate 南北为邻。得天独厚的地理位置，让炙热的阳光、清凉的海风成为每一粒葡萄最珍贵的催化剂。"
             },
             {
-                "title": "以耐心完成每一道酿造工序。",
-                "body": "通过严格的果实筛选、轻柔处理以及全新的法国橡木桶长时间陈年，完美保留葡萄酒的质地、浓郁度与自然风貌。",
-                "link": "了解详情"
+                "title": "以耐心酿造每一道工序",
+                "body": "对每一颗葡萄严格筛选、培育，在100%法国新橡木桶中陈酿24个月，未经任何过滤，采用换桶去渣方式，最大限度保留酒液的丰富层次与特色风味。"
             },
             {
-                "title": "为值得分享的时刻而生。",
-                "body": "这是一款专为私人晚宴、重要馈赠而设的葡萄酒，适合与懂得去繁就简、追求极致品质的知己共饮。",
-                "link": "了解详情"
+                "title": "为值得分享的时刻而生",
+                "body": "这是一款在爱中诞生的红酒，恰如人生高光时刻，只为与亲友共享佳酿。专为私人晚宴、重要馈赠而设，适合与懂得去繁就简的知己共饮。"
             }
         ]
     },
-    "collection": {
-        "title": "臻藏酒款",
-        "subtitle": "纳帕谷限量发布",
-        "product": {
-            "title": "Crimson & Cardinal 红葡萄酒",
-            "subtitle": "2021 Oakville, 纳帕谷",
-            "body": "结构鲜明，酒体丰满，带有深色水果、微妙的香料气息，以及由法国橡木桶陈年带来的悠长余味。它具备纳帕谷赤霞珠应有的深度，但更添一份内敛与优雅。",
-            "price": "JPY 16,800",
-            "cta": "立即购买"
-        }
+    "winemaker": {
+        "eyebrow": "酿酒师",
+        "name": "Bobby Moy",
+        "title": "酿酒师 - Bobby Moy",
+        "bio": "我在葡萄酒之乡长大，从未远离过葡萄藤，从小就对葡萄种植着迷。最初以侍酒师的身份追求对葡萄酒的热情，后在加利福尼亚中部海岸工作后，决定回到大学学习酿酒。毕业后回到纳帕谷，在纳帕最著名的酿酒师指导下工作了三年，我将酿酒视为一种根植于科学的艺术形式，以酿造出能真实表达当地风土的葡萄酒。"
     },
-    "ctaBanner": {
-        "title": "准备好探索我们的臻藏了吗？",
-        "cta": "探索酒款"
+    "collection": {
+        "eyebrow": "膜拜级藏品",
+        "title": "Crimson & Cardinal 红葡萄酒",
+        "subtitle": "2021 Oakville · 纳帕谷赤霞珠",
+        "body": "这款酒拥有纳帕山谷珍品赤霞珠的经典特色。酒体结构紧致、细腻、优雅、口感柔顺。采用手工采摘和去梗，尽量减少人工干预，让葡萄的真正特性得以彰显。",
+        "price": "¥16,800",
+        "priceLabel": "每瓶",
+        "cta": "立即购买"
     },
     "values": {
         "title": "为什么选择 Crimson & Cardinal？",
-        "subtitle": "定义我们酿酒哲学的核心准则",
         "items": [
             {
                 "title": "Oakville 卓越产区",
@@ -82,37 +78,63 @@
             },
             {
                 "title": "严谨克制的工艺",
-                "body": "在法国橡木桶中陈年 24 个月，采用最低限度的人工干预，保留果实自然本味。"
+                "body": "法国新橡木桶陈酿 24 个月，最低限度人工干预，保留果实本味。"
             },
             {
                 "title": "极少量的配额",
-                "body": "极其限量的生产规模，让我们能够对每一个橡木桶倾注极致的关注与心血。"
+                "body": "极其限量的生产规模，对每一个橡木桶倾注极致的关注与心血。"
             },
             {
                 "title": "低调内敛的奢华",
-                "body": "专为私人晚宴与资深藏家打造，拒绝浮华，回归葡萄酒本身的品质与体验。"
+                "body": "专为私人晚宴与资深藏家打造，拒绝浮华，回归品质与体验。"
             }
         ]
     },
-    "newsletter": {
-        "title": "及时了解下一次发布。",
-        "body": "订阅以接收我们的发布通知、配额信息及酒窖的最新动态。",
-        "cta": "立即订阅",
-        "placeholder": "您的电子邮箱",
-        "namePlaceholder": "您的姓名",
-        "subjectPlaceholder": "主题",
-        "messagePlaceholder": "您的留言（选填）",
-        "submit": "提交"
+    "ctaBanner": {
+        "title": "准备好探索我们的臻藏了吗？",
+        "cta": "探索酒款"
     },
-    "inquiry": {
+    "newsletter": {
+        "title": "及时了解下一次发布",
+        "body": "订阅以接收我们的发布通知、配额信息及酒窖动态。",
+        "placeholder": "您的电子邮箱",
+        "cta": "立即订阅"
+    },
+    "contact": {
         "title": "发送咨询",
-        "body": "有兴趣购买 Crimson & Cardinal 吗？留下您的联系方式，我们将尽快与您取得联系。",
-        "cta": "发送询盘"
+        "body": "有兴趣购买 Crimson & Cardinal？留下您的联系方式，我们将尽快与您联系。",
+        "namePlaceholder": "您的姓名",
+        "emailPlaceholder": "电子邮箱",
+        "phonePlaceholder": "联系电话",
+        "messagePlaceholder": "您的留言（选填）",
+        "submit": "发送询盘"
+    },
+    "orderModal": {
+        "title": "预约专属对接服务",
+        "body": "请留下您的联系信息，我们的品酒顾问将为您提供一对一专属服务。",
+        "namePlaceholder": "您的姓名",
+        "phonePlaceholder": "联系电话",
+        "emailPlaceholder": "电子邮箱",
+        "messagePlaceholder": "备注信息（选填）",
+        "submit": "提交预约",
+        "successTitle": "预约已提交",
+        "successBody": "感谢您的关注，我们的品酒顾问将在24小时内与您联系。",
+        "close": "关闭"
     },
     "footer": {
         "brand": "Crimson & Cardinal",
-        "address": "Oakville Cross Road, Oakville, CA 94562 USA",
+        "tagline": "纳帕谷膜拜级藏品赤霞珠，为爱而至。",
+        "contactTitle": "联系方式",
+        "address": "美国加州 Oakville Cross Road 1824, CA 94562",
         "email": "lessismore202312@163.com",
-        "copyright": "Copyright 2026 Crimson & Cardinal. 保留所有权利。"
+        "discoverTitle": "探索",
+        "discoverLinks": [
+            "臻藏酒款",
+            "品牌故事",
+            "酿酒师"
+        ],
+        "connectTitle": "关注我们",
+        "copyright": "Copyright 2026 Crimson & Cardinal. 保留所有权利。",
+        "icp": "粤ICP备2023151451号-2"
     }
 }

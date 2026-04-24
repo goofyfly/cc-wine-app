@@ -3,20 +3,20 @@
         "home": "Home",
         "story": "Our Story",
         "collection": "Collection",
+        "winemaker": "Winemaker",
         "contact": "Contact",
-        "inquiry": "Send Inquiry",
+        "acquireNow": "Acquire Now",
         "switchLang": "中文"
     },
     "hero": {
-        "eyebrow": "Napa Valley Cabernet Sauvignon",
-        "title": "A quieter expression of Napa Valley.",
-        "body": "Crimson & Cardinal brings together Oakville fruit, disciplined cellar work, and a refined Napa Valley profile shaped for collectors, hosts, and those who value a bottle with presence.",
+        "eyebrow": "Napa Valley Cabernet Sauvignon · 2021 Oakville",
+        "title": "Every drop is for you.",
+        "body": "Crimson & Cardinal is crafted at the heart of Napa Valley's Oakville appellation, where sun, soil, and meticulous winemaking converge to create a bottle worth sharing with the people who matter most.",
         "cta": "Explore the Collection",
         "ctaSecondary": "Our Story"
     },
     "metrics": {
-        "sectionTitle": "Made in small numbers.",
-        "sectionBody": "Our production remains intentionally limited so each release can be handled with care from vineyard to bottle.",
+        "sectionTitle": "Made in small numbers, for the few.",
         "items": [
             {
                 "value": "100",
@@ -24,7 +24,7 @@
             },
             {
                 "value": "6",
-                "label": "Limited Allocation (Bottles)"
+                "label": "Limited Acquire (Bottles)"
             },
             {
                 "value": "600",
@@ -37,44 +37,40 @@
         ]
     },
     "features": {
-        "title": "Our Craft",
-        "link": "Discover our process",
+        "title": "Sunlight, Soil, Love & Craft",
+        "subtitle": "From vineyard to glass, every step is intentional",
         "cards": [
             {
-                "title": "From Oakville, with intention.",
-                "body": "Oakville sits at the heart of Napa Valley and is known for producing Cabernet Sauvignon with depth, structure, and aging potential. We keep the style measured and composed.",
-                "link": "Learn more"
+                "title": "From Oakville, with intention",
+                "body": "Our Oakville vineyard sits at the heart of Napa Valley, with Harlan Estate to the south and To Kalon to the north. This unique location allows the hot sun and cool ocean breezes to be the most precious catalyst for each grape."
             },
             {
-                "title": "Made with patience.",
-                "body": "Shaped through careful fruit selection, gentle handling, and extended aging in new French oak to protect texture, concentration, and natural character.",
-                "link": "Learn more"
+                "title": "Made with patience",
+                "body": "Each grape is rigorously selected and cultivated. Aged for 24 months in 100% new French oak barrels without any filtration. Barrels are replaced and racked to maximize richness and characteristic flavors."
             },
             {
-                "title": "For the table, not the spotlight.",
-                "body": "Chosen for private dinners, meaningful gifts, and bottles opened with people who understand the value of keeping things simple and well made.",
-                "link": "Learn more"
+                "title": "For moments worth sharing",
+                "body": "A wine born out of love, like life's finest moments — meant to be shared with family and friends. Crafted for private dinners, meaningful gifts, and those who appreciate simplicity and quality."
             }
         ]
     },
-    "collection": {
-        "title": "Our Collection",
-        "subtitle": "Limited Napa Valley releases",
-        "product": {
-            "title": "Crimson & Cardinal Red Wine",
-            "subtitle": "2021 Oakville, Napa Valley",
-            "body": "Structured and full-bodied, with dark fruit, subtle spice, and a long oak-framed finish. Built with the depth expected of Napa Valley Cabernet, but finished with restraint and polish.",
-            "price": "JPY 16,800",
-            "cta": "Acquire This Bottle"
-        }
+    "winemaker": {
+        "eyebrow": "Our Winemaker",
+        "name": "Bobby Moy",
+        "title": "Bobby Moy - Winemaker",
+        "bio": "Growing up in wine country, I have never been far from the vine. I was fascinated with winegrowing from an early age. After working several harvests on the central coast of California, I went back to college for winemaking. I approach winemaking as an art form with its roots in science, balancing traditional and contemporary methods to produce an authentic expression of the site."
     },
-    "ctaBanner": {
-        "title": "Ready to discover our collection?",
-        "cta": "Explore the Wine"
+    "collection": {
+        "eyebrow": "Cult Collection",
+        "title": "Crimson & Cardinal Red Wine",
+        "subtitle": "2021 Oakville · Napa Valley Cabernet Sauvignon",
+        "body": "This wine has the classic characteristics of a rare Napa Valley Cabernet Sauvignon. Tightly structured, delicate, elegant and smooth. We use hand harvesting and destemming to minimize intervention and allow the true character of the grapes to shine through.",
+        "price": "¥16,800",
+        "priceLabel": "per bottle",
+        "cta": "Acquire Now"
     },
     "values": {
         "title": "Why Crimson & Cardinal?",
-        "subtitle": "The principles that define our winemaking",
         "items": [
             {
                 "title": "Oakville Provenance",
@@ -82,7 +78,7 @@
             },
             {
                 "title": "Disciplined Craft",
-                "body": "Aged 24 months in French oak with minimal intervention to preserve natural character."
+                "body": "Aged 24 months in new French oak with minimal intervention to preserve natural character."
             },
             {
                 "title": "Limited Allocation",
@@ -94,25 +90,51 @@
             }
         ]
     },
-    "newsletter": {
-        "title": "Stay close to the next release.",
-        "body": "Receive release updates, allocation news, and occasional notes from the cellar.",
-        "cta": "Subscribe",
-        "placeholder": "Your email address",
-        "namePlaceholder": "Your name",
-        "subjectPlaceholder": "Subject",
-        "messagePlaceholder": "Your message (optional)",
-        "submit": "Submit"
+    "ctaBanner": {
+        "title": "Ready to discover our collection?",
+        "cta": "Explore the Wine"
     },
-    "inquiry": {
+    "newsletter": {
+        "title": "Stay close to the next release",
+        "body": "Receive release updates, allocation news, and notes from the cellar.",
+        "placeholder": "Your email address",
+        "cta": "Subscribe"
+    },
+    "contact": {
         "title": "Send an Inquiry",
         "body": "Interested in acquiring Crimson & Cardinal? Leave your details and we will get back to you.",
-        "cta": "Send Inquiry"
+        "namePlaceholder": "Your name",
+        "emailPlaceholder": "Email address",
+        "phonePlaceholder": "Phone number",
+        "messagePlaceholder": "Your message (optional)",
+        "submit": "Send Inquiry"
+    },
+    "orderModal": {
+        "title": "Book a Private Consultation",
+        "body": "Leave your contact details and our wine consultant will provide you with exclusive one-on-one service.",
+        "namePlaceholder": "Your name",
+        "phonePlaceholder": "Phone number",
+        "emailPlaceholder": "Email address",
+        "messagePlaceholder": "Additional notes (optional)",
+        "submit": "Submit Reservation",
+        "successTitle": "Reservation Submitted",
+        "successBody": "Thank you for your interest. Our wine consultant will contact you within 24 hours.",
+        "close": "Close"
     },
     "footer": {
         "brand": "Crimson & Cardinal",
-        "address": "Oakville Cross Road, Oakville, CA 94562 USA",
+        "tagline": "Napa Valley Cult Cabernet Sauvignon, crafted with love.",
+        "contactTitle": "Contact",
+        "address": "1824 Oakville Cross Road, Oakville, CA 94562 USA",
         "email": "lessismore202312@163.com",
-        "copyright": "Copyright 2026 Crimson & Cardinal. All rights reserved."
+        "discoverTitle": "Discover",
+        "discoverLinks": [
+            "Collection",
+            "Our Story",
+            "Winemaker"
+        ],
+        "connectTitle": "Connect",
+        "copyright": "Copyright 2026 Crimson & Cardinal. All rights reserved.",
+        "icp": ""
     }
 }
