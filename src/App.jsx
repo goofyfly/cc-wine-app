@@ -17,15 +17,15 @@ function App() {
   const toggleLang = () => setLang(prev => (prev === 'zh' ? 'en' : 'zh'));
 
   return (
-    <div className="min-h-[100dvh] flex flex-col bg-stone-50 selection:bg-red-900 selection:text-white font-sans">
+    <div className="min-h-[100dvh] flex flex-col bg-charcoal-950 font-sans">
       <Navbar t={t} toggleLang={toggleLang} lang={lang} />
       <AnimatePresence mode="wait">
         <motion.div
           key={lang}
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5, ease: [0.32, 0.72, 0, 1] }}
           className="flex-1"
         >
           <Home t={t} />

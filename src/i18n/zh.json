@@ -1,35 +1,81 @@
 {
     "nav": {
-        "collection": "葡萄酒收藏",
-        "story": "了解我们",
+        "home": "首页",
+        "story": "品牌故事",
+        "collection": "藏酒系列",
+        "contact": "联系我们",
+        "inquiry": "发送询盘",
         "switchLang": "EN"
     },
     "hero": {
-        "title": "纳帕山谷·膜拜级藏品赤霞珠",
-        "subtitle": "每一滴膜拜 皆为你而来",
-        "brand": "Crimson & Cardinal",
-        "price": "￥16800.00 / 瓶",
-        "buyNow": "立即订购"
+        "eyebrow": "纳帕谷赤霞珠",
+        "title": "更克制的纳帕谷表达。",
+        "body": "Crimson & Cardinal 以 Oakville 风土为核心，用更克制、更有结构的方式呈现一款值得珍藏与分享的赤霞珠。",
+        "cta": "探索藏酒系列",
+        "ctaSecondary": "了解品牌故事"
     },
-    "features": {
-        "feature1": {
-            "title": "阳光与土壤 爱与初心",
-            "desc1": "Crimson & Cardinal 产自世界闻名的葡萄酒之乡——纳帕山谷。",
-            "desc2": "产地奥克维尔葡萄园位于纳帕山谷核心区域。得天独厚的地理位置，让炙热的阳光、清凉的海风成为每一粒葡萄最珍贵的催化剂，铸就顶级膜拜酒之灵魂。",
-            "desc3": "Crimson & Cardinal 用最珍贵的葡萄和最严格的工艺，挑选、栽培和酿造 2021 年纳帕谷最优质的葡萄，酿造出纳帕谷最优质的葡萄酒..."
-        },
-        "feature2": {
-            "title": "潜藏卓越 挚献传世",
-            "desc1": "这款酒拥有纳帕山谷珍品赤霞珠经典特色。",
-            "desc2": "酒体结构紧致、细腻、优雅、口感柔顺。",
-            "desc3": "在100%法国新橡木桶中陈酿24个月，未经任何过滤。采用换桶去渣方式，最大限度保留酒液的丰富层次与特色风味。"
-        },
-        "feature3": {
-            "title": "稀贵酿造 为少数人而来",
-            "desc": "采用手工采摘和去梗的方式，尽量减少人工干预，让葡萄的真正特性得以彰显。"
-        }
+    "metrics": {
+        "sectionTitle": "限量酿造，缓慢呈现。",
+        "sectionBody": "每一批次都保持小规模发布，只为给葡萄园与酒窖留出足够的耐心。",
+        "items": [
+            {
+                "value": "100",
+                "label": "年产量（箱）"
+            },
+            {
+                "value": "6",
+                "label": "限量购买（瓶）"
+            },
+            {
+                "value": "600",
+                "label": "本批次产量（瓶）"
+            },
+            {
+                "value": "500+",
+                "label": "会员人数"
+            }
+        ]
+    },
+    "product": {
+        "title": "Crimson & Cardinal Red Wine",
+        "subtitle": "2021 Oakville, Napa Valley",
+        "body": "深色果香、细致单宁、橡木桶带来的层次与悠长余韵，构成这款限量纳帕谷佳酿。",
+        "price": "￥16,800",
+        "cta": "查看酒款详情"
+    },
+    "provenance": {
+        "title": "来自 Oakville，亦忠于风土。",
+        "body": "Oakville 位于纳帕谷核心地带，为酒体带来结构、深度与克制的力量感。Crimson & Cardinal 在忠于风土的同时，保持了优雅与从容。"
+    },
+    "winemaking": {
+        "title": "以耐心完成每一道酿造工序。",
+        "body": "从轻柔处理到法国橡木桶陈年，每一步都服务于平衡、质地与余韵。",
+        "points": [
+            "手工采摘果实",
+            "轻柔去梗，尽量减少干预",
+            "法国橡木桶陈酿24个月",
+            "兼具早期品饮与窖藏潜力"
+        ]
+    },
+    "newsletter": {
+        "title": "及时了解下一次发布。",
+        "body": "接收新品发布、配额信息与来自酒窖的简短更新。",
+        "cta": "加入邮件名单",
+        "placeholder": "您的邮箱地址",
+        "namePlaceholder": "姓名",
+        "subjectPlaceholder": "邮件标题",
+        "messagePlaceholder": "邮件正文（可选）",
+        "submit": "提交"
+    },
+    "inquiry": {
+        "title": "发送询盘",
+        "body": "对 Crimson & Cardinal 感兴趣？请留下您的联系方式，我们将尽快回复。",
+        "cta": "发送询盘"
     },
     "footer": {
-        "copyright": "所有内容版权均属 2024 © Crimson & Cardinal"
+        "brand": "Crimson & Cardinal",
+        "address": "美国加州奥克维尔十字路 1824 号 94562",
+        "email": "lessismore202312@163.com",
+        "copyright": "版权所有 2026 Crimson & Cardinal. 保留一切权利。"
     }
 }

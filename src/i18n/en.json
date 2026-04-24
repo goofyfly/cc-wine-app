@@ -1,35 +1,81 @@
 {
     "nav": {
-        "collection": "WINE COLLECTION",
-        "story": "OUR STORY",
+        "home": "Home",
+        "story": "Our Story",
+        "collection": "Collection",
+        "contact": "Contact",
+        "inquiry": "Send Inquiry",
         "switchLang": "中文"
     },
     "hero": {
-        "title": "Napa Valley Cabernet Sauvignon",
-        "subtitle": "Every drop is for you",
-        "brand": "Crimson & Cardinal",
-        "price": "$16,800.00 / Bottle",
-        "buyNow": "ACQUIRE NOW"
+        "eyebrow": "Napa Valley Cabernet Sauvignon",
+        "title": "A quieter expression of Napa Valley.",
+        "body": "Crimson & Cardinal is an Oakville-shaped Cabernet Sauvignon made with restraint, structure, and a collector's sense of timing.",
+        "cta": "Explore the Collection",
+        "ctaSecondary": "Our Story"
     },
-    "features": {
-        "feature1": {
-            "title": "What makes",
-            "desc1": "Crimson & Cardinal is produced in Napa Valley, the “Disneyland” of wine lovers.",
-            "desc2": "The Oakville Vineyard is located in the heart of the Napa Valley... This unique location allows the hot sun and cool ocean breezes to be the most precious catalyst for each grape, forging the soul of the top worship wine.",
-            "desc3": "With love and dedication, Crimson & Cardinal selected, cultivated, and vinified the 2021 vintage of Napa Valley's finest grapes..."
-        },
-        "feature2": {
-            "title": "Hidden Excellence",
-            "desc1": "This wine has the classic characteristics of a rare Napa Valley Cabernet Sauvignon.",
-            "desc2": "Tightly structured, delicate, elegant and smooth.",
-            "desc3": "Aged for 24 months in 100% new French oak barrels without any filtration. The barrels are replaced and de-scummed to maximize the richness of the wine and its characteristic flavors."
-        },
-        "feature3": {
-            "title": "Brewing for the Elite",
-            "desc": "We use hand harvesting and destemming to minimize intervention and allow the true character of the grapes to shine through."
-        }
+    "metrics": {
+        "sectionTitle": "Made in small numbers.",
+        "sectionBody": "Each release remains intentionally limited, allowing careful handling from vineyard to bottle.",
+        "items": [
+            {
+                "value": "100",
+                "label": "Annual Production (Cases)"
+            },
+            {
+                "value": "6",
+                "label": "Limited Allocation (Bottles)"
+            },
+            {
+                "value": "600",
+                "label": "Current Release (Bottles)"
+            },
+            {
+                "value": "500+",
+                "label": "Club Members"
+            }
+        ]
+    },
+    "product": {
+        "title": "Crimson & Cardinal Red Wine",
+        "subtitle": "2021 Oakville, Napa Valley",
+        "body": "Dark fruit, fine oak, polished tannins, and a long, composed finish define this limited Napa Valley release.",
+        "price": "JPY 16,800",
+        "cta": "View Bottle Details"
+    },
+    "provenance": {
+        "title": "From Oakville, with intention.",
+        "body": "At the heart of Napa Valley, Oakville gives the wine its depth, structure, and quiet authority. Crimson & Cardinal draws on that character while keeping the style measured and composed."
+    },
+    "winemaking": {
+        "title": "Made with patience in the cellar.",
+        "body": "Gentle handling and extended French oak aging preserve texture, length, and balance without excess.",
+        "points": [
+            "Hand-harvested fruit",
+            "Gentle destemming and minimal intervention",
+            "Aged 24 months in French oak",
+            "Built for both early enjoyment and cellaring"
+        ]
+    },
+    "newsletter": {
+        "title": "Stay close to the next release.",
+        "body": "Receive release updates, allocation news, and occasional notes from the cellar.",
+        "cta": "Join the Mailing List",
+        "placeholder": "Your email address",
+        "namePlaceholder": "Your name",
+        "subjectPlaceholder": "Subject",
+        "messagePlaceholder": "Your message (optional)",
+        "submit": "Submit"
+    },
+    "inquiry": {
+        "title": "Send an Inquiry",
+        "body": "Interested in acquiring Crimson & Cardinal? Leave your details and we will get back to you.",
+        "cta": "Send Inquiry"
     },
     "footer": {
-        "copyright": "All content copyright 2024 © Crimson & Cardinal"
+        "brand": "Crimson & Cardinal",
+        "address": "Oakville Cross Road, Oakville, CA 94562 USA",
+        "email": "lessismore202312@163.com",
+        "copyright": "Copyright 2026 Crimson & Cardinal. All rights reserved."
     }
 }
