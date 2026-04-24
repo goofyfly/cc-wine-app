@@ -10,13 +10,13 @@
     "hero": {
         "eyebrow": "Napa Valley Cabernet Sauvignon",
         "title": "A quieter expression of Napa Valley.",
-        "body": "Crimson & Cardinal is an Oakville-shaped Cabernet Sauvignon made with restraint, structure, and a collector's sense of timing.",
+        "body": "Crimson & Cardinal brings together Oakville fruit, disciplined cellar work, and a refined Napa Valley profile shaped for collectors, hosts, and those who value a bottle with presence.",
         "cta": "Explore the Collection",
         "ctaSecondary": "Our Story"
     },
     "metrics": {
         "sectionTitle": "Made in small numbers.",
-        "sectionBody": "Each release remains intentionally limited, allowing careful handling from vineyard to bottle.",
+        "sectionBody": "Our production remains intentionally limited so each release can be handled with care from vineyard to bottle.",
         "items": [
             {
                 "value": "100",
@@ -36,31 +36,68 @@
             }
         ]
     },
-    "product": {
-        "title": "Crimson & Cardinal Red Wine",
-        "subtitle": "2021 Oakville, Napa Valley",
-        "body": "Dark fruit, fine oak, polished tannins, and a long, composed finish define this limited Napa Valley release.",
-        "price": "JPY 16,800",
-        "cta": "View Bottle Details"
+    "features": {
+        "title": "Our Craft",
+        "link": "Discover our process",
+        "cards": [
+            {
+                "title": "From Oakville, with intention.",
+                "body": "Oakville sits at the heart of Napa Valley and is known for producing Cabernet Sauvignon with depth, structure, and aging potential. We keep the style measured and composed.",
+                "link": "Learn more"
+            },
+            {
+                "title": "Made with patience.",
+                "body": "Shaped through careful fruit selection, gentle handling, and extended aging in new French oak to protect texture, concentration, and natural character.",
+                "link": "Learn more"
+            },
+            {
+                "title": "For the table, not the spotlight.",
+                "body": "Chosen for private dinners, meaningful gifts, and bottles opened with people who understand the value of keeping things simple and well made.",
+                "link": "Learn more"
+            }
+        ]
     },
-    "provenance": {
-        "title": "From Oakville, with intention.",
-        "body": "At the heart of Napa Valley, Oakville gives the wine its depth, structure, and quiet authority. Crimson & Cardinal draws on that character while keeping the style measured and composed."
+    "collection": {
+        "title": "Our Collection",
+        "subtitle": "Limited Napa Valley releases",
+        "product": {
+            "title": "Crimson & Cardinal Red Wine",
+            "subtitle": "2021 Oakville, Napa Valley",
+            "body": "Structured and full-bodied, with dark fruit, subtle spice, and a long oak-framed finish. Built with the depth expected of Napa Valley Cabernet, but finished with restraint and polish.",
+            "price": "JPY 16,800",
+            "cta": "Acquire This Bottle"
+        }
     },
-    "winemaking": {
-        "title": "Made with patience in the cellar.",
-        "body": "Gentle handling and extended French oak aging preserve texture, length, and balance without excess.",
-        "points": [
-            "Hand-harvested fruit",
-            "Gentle destemming and minimal intervention",
-            "Aged 24 months in French oak",
-            "Built for both early enjoyment and cellaring"
+    "ctaBanner": {
+        "title": "Ready to discover our collection?",
+        "cta": "Explore the Wine"
+    },
+    "values": {
+        "title": "Why Crimson & Cardinal?",
+        "subtitle": "The principles that define our winemaking",
+        "items": [
+            {
+                "title": "Oakville Provenance",
+                "body": "Sourced from the heart of Napa Valley, ensuring exceptional structure and depth."
+            },
+            {
+                "title": "Disciplined Craft",
+                "body": "Aged 24 months in French oak with minimal intervention to preserve natural character."
+            },
+            {
+                "title": "Limited Allocation",
+                "body": "Deliberately small production volume guarantees meticulous attention to every barrel."
+            },
+            {
+                "title": "Quiet Luxury",
+                "body": "Designed for private tables and seasoned collectors, avoiding unnecessary spectacle."
+            }
         ]
     },
     "newsletter": {
         "title": "Stay close to the next release.",
         "body": "Receive release updates, allocation news, and occasional notes from the cellar.",
-        "cta": "Join the Mailing List",
+        "cta": "Subscribe",
         "placeholder": "Your email address",
         "namePlaceholder": "Your name",
         "subjectPlaceholder": "Subject",

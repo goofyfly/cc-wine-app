@@ -9,7 +9,7 @@ const Navbar = ({ t, toggleLang, lang }) => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
-        const onScroll = () => setScrolled(window.scrollY > 60);
+        const onScroll = () => setScrolled(window.scrollY > 20);
         window.addEventListener('scroll', onScroll, { passive: true });
         return () => window.removeEventListener('scroll', onScroll);
     }, []);
@@ -18,60 +18,62 @@ const Navbar = ({ t, toggleLang, lang }) => {
 
     const links = [
         { href: '#hero', label: t.nav.home },
-        { href: '#collection', label: t.nav.collection },
         { href: '#story', label: t.nav.story },
+        { href: '#collection', label: t.nav.collection },
         { href: '#contact', label: t.nav.contact },
     ];
 
     return (
         <>
             <motion.nav
-                initial={{ y: -30, opacity: 0 }}
+                initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={navTransition}
-                className={`fixed top-0 left-0 right-0 z-50 px-4 md:px-8 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] ${scrolled ? 'pt-2' : 'pt-4 md:pt-6'
+                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] ${scrolled ? 'glass-nav py-3' : 'py-6 bg-gradient-overlay'
                     }`}
             >
-                <div className={`max-w-[1400px] mx-auto flex justify-between items-center glass-nav rounded-full px-6 md:px-10 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] ${scrolled ? 'py-2.5' : 'py-3.5'
-                    }`}>
+                <div className="max-w-[1440px] mx-auto px-6 md:px-12 flex justify-between items-center">
                     {/* Left: Nav Links (desktop) */}
-                    <div className="hidden lg:flex items-center gap-8 text-[10px] font-bold tracking-[0.2em] text-ivory-300 uppercase">
+                    <div className="hidden lg:flex flex-1 items-center gap-8 text-[11px] font-bold tracking-[0.2em] text-ivory-200 uppercase">
                         {links.map((link) => (
                             <a
                                 key={link.href}
                                 href={link.href}
-                                className="hover:text-ivory-50 transition-colors duration-500"
+                                className="hover:text-ivory-50 transition-colors duration-500 relative group"
                             >
                                 {link.label}
+                                <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-brass-400 group-hover:w-full transition-all duration-500"></span>
                             </a>
                         ))}
                     </div>
 
-                    {/* Center: Brand */}
-                    <div className="flex items-center gap-3">
-                        <div className="w-7 h-7 rounded-full border border-brass-500/40 flex items-center justify-center">
-                            <span className="text-brass-400 text-[9px] font-bold tracking-[0.1em]">CC</span>
-                        </div>
-                        <span className="font-bold tracking-[0.15em] text-ivory-50 text-xs hidden sm:block">
-                            CRIMSON & CARDINAL
-                        </span>
+                    {/* Center: Brand Logo */}
+                    <div className="flex-1 lg:flex-none flex justify-start lg:justify-center items-center">
+                        <a href="#hero" className="block w-14 h-14 md:w-16 md:h-16 relative">
+                            <img
+                                src="/images/logo.png"
+                                alt="Crimson & Cardinal Logo"
+                                className="w-full h-full object-contain filter brightness-0 invert drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"
+                                style={{ filter: 'brightness(0) invert(1) drop-shadow(0 2px 10px rgba(0,0,0,0.5))' }}
+                            />
+                        </a>
                     </div>
 
                     {/* Right: Actions */}
-                    <div className="flex items-center gap-4">
+                    <div className="flex-1 flex justify-end items-center gap-4">
                         <button
                             onClick={toggleLang}
-                            className="group flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-charcoal-600 hover:border-ivory-300/30 transition-all duration-500 active:scale-95 cursor-pointer"
+                            className="group flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-charcoal-700 hover:border-brass-500/50 transition-all duration-500 active:scale-95 cursor-pointer"
                         >
-                            <Globe size={12} weight="light" className="text-ivory-400 group-hover:text-ivory-100 transition-colors" />
-                            <span className="text-[9px] font-bold tracking-[0.15em] text-ivory-400 group-hover:text-ivory-100 uppercase transition-colors">
+                            <Globe size={14} weight="light" className="text-ivory-300 group-hover:text-brass-400 transition-colors" />
+                            <span className="text-[10px] font-bold tracking-[0.15em] text-ivory-300 group-hover:text-ivory-50 uppercase transition-colors">
                                 {t.nav.switchLang}
                             </span>
                         </button>
 
                         <a
                             href="#contact"
-                            className="hidden md:flex items-center gap-2 bg-crimson-800 hover:bg-crimson-700 text-ivory-50 px-5 py-2 rounded-full text-[10px] font-bold tracking-[0.15em] uppercase transition-all duration-500 active:scale-95"
+                            className="hidden md:flex btn-gold px-6 py-2.5 rounded-full text-[10px] font-bold tracking-[0.15em] uppercase active:scale-95"
                         >
                             {t.nav.inquiry}
                         </a>
@@ -79,7 +81,7 @@ const Navbar = ({ t, toggleLang, lang }) => {
                         {/* Mobile hamburger */}
                         <button
                             onClick={() => setMenuOpen(!menuOpen)}
-                            className="lg:hidden p-2 rounded-full border border-charcoal-600 hover:border-ivory-300/30 transition-all cursor-pointer"
+                            className="lg:hidden p-2 rounded-full border border-charcoal-700 hover:border-brass-500/50 transition-all cursor-pointer"
                             aria-label="Menu"
                         >
                             <motion.div
@@ -87,9 +89,9 @@ const Navbar = ({ t, toggleLang, lang }) => {
                                 transition={{ duration: 0.3, ease: [0.32, 0.72, 0, 1] }}
                             >
                                 {menuOpen ? (
-                                    <X size={16} weight="light" className="text-ivory-200" />
+                                    <X size={18} weight="light" className="text-ivory-100" />
                                 ) : (
-                                    <List size={16} weight="light" className="text-ivory-200" />
+                                    <List size={18} weight="light" className="text-ivory-100" />
                                 )}
                             </motion.div>
                         </button>
@@ -128,7 +130,7 @@ const Navbar = ({ t, toggleLang, lang }) => {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: 15 }}
                             transition={{ delay: links.length * 0.08, duration: 0.6, ease: [0.32, 0.72, 0, 1] }}
-                            className="mt-6 bg-crimson-800 text-ivory-50 px-8 py-3 rounded-full text-xs font-bold tracking-[0.2em] uppercase"
+                            className="mt-6 btn-gold px-8 py-3 rounded-full text-xs font-bold tracking-[0.2em] uppercase"
                         >
                             {t.nav.inquiry}
                         </motion.a>
