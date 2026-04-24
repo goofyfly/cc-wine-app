@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, EnvelopeSimple, InstagramLogo, FacebookLogo } from '@phosphor-icons/react';
+import { MapPin, EnvelopeSimple } from '@phosphor-icons/react';
 
 const Footer = ({ t }) => {
     const discoverHrefs = ['#collection', '#story', '#winemaker'];
@@ -7,7 +7,7 @@ const Footer = ({ t }) => {
     return (
         <footer className="bg-charcoal-950 pt-20 pb-10 px-5 md:px-10 border-t border-charcoal-800/50">
             <div className="max-w-[1400px] mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12 mb-16">
                     {/* col 1: brand */}
                     <div className="flex flex-col items-start gap-5">
                         <img
@@ -49,21 +49,6 @@ const Footer = ({ t }) => {
                                     {label}
                                 </a>
                             ))}
-                        </div>
-                    </div>
-
-                    {/* col 4: social */}
-                    <div className="flex flex-col items-start gap-5">
-                        <h4 className="text-ivory-50 text-[10px] font-bold tracking-[0.2em] uppercase">
-                            {t.footer.connectTitle}
-                        </h4>
-                        <div className="flex gap-4 text-ivory-300">
-                            <a href="#" className="hover:text-brass-400 transition-colors" aria-label="Instagram">
-                                <InstagramLogo size={20} weight="light" />
-                            </a>
-                            <a href="#" className="hover:text-brass-400 transition-colors" aria-label="Facebook">
-                                <FacebookLogo size={20} weight="light" />
-                            </a>
                         </div>
                     </div>
                 </div>

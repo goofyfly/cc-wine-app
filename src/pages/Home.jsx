@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import {
     ArrowRight,
     MapPin,
@@ -33,9 +33,23 @@ const stagger = {
 const featureIcons = [MapPin, Drop, HandHeart];
 const valueIcons = [MapPin, Timer, Leaf, Crown];
 
+const heroImages = [
+    '/images/vineyard-hero.jpg',
+    '/images/cellar.jpg',
+    '/images/vineyard.jpg',
+];
+
 const Home = ({ t, onOpenModal }) => {
     const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
     const [formStatus, setFormStatus] = useState(null);
+    const [bgIndex, setBgIndex] = useState(0);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setBgIndex((prev) => (prev + 1) % heroImages.length);
+        }, 6000);
+        return () => clearInterval(timer);
+    }, []);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -49,16 +63,26 @@ const Home = ({ t, onOpenModal }) => {
             {/* ═══════════════ 1. HERO ═══════════════ */}
             <section
                 id="hero"
-                className="relative min-h-[100dvh] pt-28 pb-16 px-5 md:px-10 flex items-center"
+                className="relative min-h-[100dvh] pt-28 pb-16 px-5 md:px-10 flex items-center overflow-hidden"
             >
-                {/* bg image */}
+                {/* bg image with dynamic frosted glass */}
                 <div className="absolute inset-0 z-0">
-                    <img
-                        src="/images/vineyard-hero.jpg"
-                        alt=""
-                        className="w-full h-full object-cover opacity-20"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-b from-charcoal-950/60 via-charcoal-950/80 to-charcoal-950" />
+                    <AnimatePresence mode="popLayout">
+                        {heroImages.map((src, i) => i === bgIndex && (
+                            <motion.img
+                                key={src}
+                                src={src}
+                                initial={{ opacity: 0, scale: 1.05 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 1.8, ease: 'easeInOut' }}
+                                className="absolute inset-0 w-full h-full object-cover"
+                            />
+                        ))}
+                    </AnimatePresence>
+                    {/* Frosted glass / gradient overlay */}
+                    <div className="absolute inset-0 bg-charcoal-950/40 backdrop-blur-xl" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-charcoal-950/20 via-charcoal-950/80 to-charcoal-950" />
                 </div>
 
                 <div className="relative z-10 max-w-[1400px] mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-6 items-center">
@@ -117,9 +141,9 @@ const Home = ({ t, onOpenModal }) => {
                         <div className="absolute w-72 h-72 md:w-96 md:h-96 bg-brass-500/6 blur-[100px] rounded-full" />
                         <div className="relative z-10 w-full max-w-[420px]">
                             <img
-                                src="/images/bottle.png"
+                                src="/images/bottle_premium.png"
                                 alt="Crimson & Cardinal 2021 Oakville Cabernet Sauvignon"
-                                className="w-full h-auto object-contain drop-shadow-[0_15px_40px_rgba(0,0,0,0.4)]"
+                                className="w-full h-auto object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.6)]"
                             />
                         </div>
                     </motion.div>
@@ -274,7 +298,7 @@ const Home = ({ t, onOpenModal }) => {
                     >
                         <div className="absolute inset-0 bg-brass-500/4 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                         <img
-                            src="/images/bottle.png"
+                            src="/images/bottle_premium.png"
                             alt={t.collection.title}
                             className="h-[80%] lg:h-[88%] w-auto object-contain drop-shadow-2xl group-hover:scale-[1.03] transition-transform duration-700"
                         />
