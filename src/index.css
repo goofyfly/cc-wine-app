@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Outfit", serif;
+  --font-sans: "Geist", sans-serif;
+
+  --color-wine-950: #450a0a;
+  --color-wine-900: #7f1d1d;
+  --color-wine-800: #991b1b;
+  --color-wine-700: #b91c1c;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 240 10% 3.9%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-stone-50 text-stone-950 antialiased selection:bg-red-100 selection:text-red-900;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-[inset_0_1px_0_rgba(255, 255, 255, 0.1)];
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+}
+
+/* Custom Scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-stone-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-stone-300 rounded-full border-4 border-stone-100 hover:bg-stone-400 transition-colors;
+}
